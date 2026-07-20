@@ -1,0 +1,19 @@
+configuration:
+  log_level:
+    name: Log level
+    description: Logging verbosity for the add-on manager.
+  reasoning_effort:
+    name: Reasoning effort
+    description: Default reasoning effort passed to GPTMock.
+  reasoning_summary:
+    name: Reasoning summary
+    description: Default reasoning summary mode passed to GPTMock.
+  reasoning_compat:
+    name: Reasoning compatibility
+    description: Response format used for reasoning content.
+  expose_reasoning_models:
+    name: Expose reasoning variants
+    description: List reasoning effort variants as separate models.
+  enable_web_search:
+    name: Enable web search
+    description: Allow GPTMock to add web search when a request does not specify tools.

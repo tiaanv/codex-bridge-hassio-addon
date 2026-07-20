@@ -1,0 +1,87 @@
+# Operating system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Test and coverage output
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Python build artifacts
+build/
+dist/
+*.egg-info/
+
+# Node.js package artifacts
+node_modules/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+**/auth.json
+**/api_token
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+.pypirc
+
+# Runtime data, logs, and temporary files
+/data/
+codex_bridge/data/
+/addon_configs/
+/backup/
+/config/
+/media/
+/share/
+/ssl/
+*.log
+*.pid
+*.sock
+*.tmp
+*.bak
+*.db
+*.sqlite
+*.sqlite3
+tmp/
+temp/
+
+# Locally downloaded or exported archives
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
