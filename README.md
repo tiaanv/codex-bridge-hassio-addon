@@ -1,5 +1,9 @@
 # Codex Bridge (Hassio Add-on)
 
+<p align="center">
+  <img src="codex_bridge/logo.png" alt="Codex Bridge logo" width="250">
+</p>
+
 This repository packages [GPTMock](https://github.com/rapidrabbit76/GPTMock)
 as an installable Home Assistant add-on. GPTMock itself is not forked or
 modified. The build installs a checksum-verified upstream repository commit
@@ -51,6 +55,10 @@ The upstream GPTMock commit and archive checksum are pinned in
 [`codex_bridge/Dockerfile`](codex_bridge/Dockerfile). Update it deliberately
 and validate OAuth, OpenAI-compatible endpoints, Ollama chat streaming, and
 tool calls before releasing a new add-on version.
+
+The Home Assistant add-on store uses [`codex_bridge/icon.png`](codex_bridge/icon.png)
+as the square add-on icon and [`codex_bridge/logo.png`](codex_bridge/logo.png)
+as the wider logo artwork.
 
 ## License
 
