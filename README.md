@@ -56,10 +56,6 @@ The upstream GPTMock commit and archive checksum are pinned in
 and validate OAuth, OpenAI-compatible endpoints, Ollama chat streaming, and
 tool calls before releasing a new add-on version.
 
-The Home Assistant add-on store uses [`codex_bridge/icon.png`](codex_bridge/icon.png)
-as the square add-on icon and [`codex_bridge/logo.png`](codex_bridge/logo.png)
-as the wider logo artwork.
-
 ## License
 
 The add-on wrapper is licensed under the MIT License. GPTMock is an independent

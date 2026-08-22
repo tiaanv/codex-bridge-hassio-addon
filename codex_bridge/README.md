@@ -10,7 +10,4 @@ endpoint.
 
 Add-on version `2026.7.13` contains GPTMock release `2026.7.13`.
 
-Home Assistant uses `icon.png` from this add-on folder as the square add-on
-icon and `logo.png` as the wider logo artwork.
-
 See [DOCS.md](DOCS.md) for setup instructions and limitations.
