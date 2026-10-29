@@ -1,5 +1,5 @@
 name: Codex Bridge (Hassio Add-on)
-version: "2026.7.13"
+version: "2026.7.13.1"
 slug: codex_bridge
 description: Experimental OpenAI and Ollama compatible bridge powered by GPTMock
 url: https://github.com/h3racl3z/codex-bridge-hassio-addon

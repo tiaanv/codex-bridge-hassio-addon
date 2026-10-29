@@ -5,10 +5,13 @@
 </p>
 
 This repository packages [GPTMock](https://github.com/rapidrabbit76/GPTMock)
-as an installable Home Assistant add-on. GPTMock itself is not forked or
-modified. The build installs a checksum-verified upstream repository commit
+as an installable Home Assistant add-on. The build installs a checksum-verified upstream repository commit
 and adds a small management layer for Home Assistant ingress, OAuth setup,
 persistent credentials, and API authentication.
+
+Version `2026.7.13.1` applies a narrow Ollama response-adapter backport to
+that pinned source. It preserves streamed tool calls for Home Assistant and
+normalises tool arguments to Ollama objects; other upstream behaviour is unchanged.
 
 The OAuth setup uses the official Codex CLI's device authorization flow. The
 user opens one URL and enters a short-lived code; no localhost callback needs
@@ -44,7 +47,7 @@ image, but ensures that the add-on uses the explicitly reviewed source commit.
 ## Versioning
 
 The add-on's base version matches the embedded GPTMock release. The current
-version is [2026.7.13](https://github.com/rapidrabbit76/GPTMock/releases/tag/2026.7.13).
+upstream version is [2026.7.13](https://github.com/rapidrabbit76/GPTMock/releases/tag/2026.7.13).
 If the Home Assistant wrapper needs a release without a new GPTMock version,
 it will use a fourth numeric component such as `2026.7.13.1` so Home Assistant
 recognizes it as a newer version.

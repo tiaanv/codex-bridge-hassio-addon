@@ -390,7 +390,7 @@ ADMIN_HTML = """<!doctype html>
 </head>
 <body><main>
   <h1>Codex Bridge (Hassio Add-on)</h1>
-  <p>GPTMock remains unmodified and runs securely behind this Home Assistant adapter.</p>
+  <p>GPTMock runs behind this Home Assistant adapter with an Ollama tool-call compatibility backport.</p>
   <section>
     <h2>1. Sign in with ChatGPT</h2>
     <p id="auth-state">Loading status …</p>

@@ -53,10 +53,11 @@ require the generated bearer token.
   maintained GitHub source.
 - ChatGPT subscriptions and OpenAI API usage are separate products. Review the
   applicable OpenAI terms before use.
-- Plain conversation is the first compatibility target. Home Assistant device
-  control requires correct streaming Ollama tool calls. GPTMock 2026.7.13 does
-  not currently forward these through its Ollama streaming adapter, so device
-  control is not yet declared supported by this add-on.
+- Version `2026.7.13.1` backports Ollama response adapters for streamed tool
+  calls. Complete argument objects are emitted only after upstream completion;
+  malformed or incomplete calls return an error. Device access must still be
+  enabled in the Home Assistant conversation agent's Assist tools setting.
+  Validate device queries in your installation before relying on control.
 - Reauthentication and API-token rotation do not yet have UI controls.
 
 ## Security
@@ -64,7 +65,8 @@ require the generated bearer token.
 - The OAuth credential file and generated bridge API key are stored with mode
   `0600` under `/data`.
 - Device authorization is performed by the pinned official OpenAI Codex CLI;
-  GPTMock itself remains unchanged.
+  The Ollama response adapters are patched during the image build; authentication
+  and upstream request handling remain unchanged.
 - GPTMock listens only on the container loopback interface. Network clients
   reach it through the bearer-token proxy.
 - The bearer-token proxy is reachable from Home Assistant's internal add-on

@@ -53,6 +53,13 @@ LABEL \
 
 COPY rootfs /
 
+# Narrow response-adapter backport; keep the reviewed upstream pin and its
+# request handling (including HA's options.num_ctx) unchanged.
+COPY compat/ollama_tools.py /app/gptmock/services/bridge_ollama_tools.py
+COPY compat/install.py /tmp/install_ollama_tools.py
+RUN python /tmp/install_ollama_tools.py /app/gptmock/routers/ollama.py \
+    && rm /tmp/install_ollama_tools.py
+
 RUN chmod 0755 /run.sh
 
 EXPOSE 8000 8099
